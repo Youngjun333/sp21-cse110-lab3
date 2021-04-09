@@ -8,7 +8,6 @@
 <body>
     <header>
         <h1>Jun's Journal</h1>
-
     </header>
     <nav>
         <p>Resources used</p>
@@ -19,7 +18,7 @@
             <summary>Sort by month and year</summary>
                 <details>
                     <summary>2021</summary>
-                        <p>Soon to be worked on</p>
+                    <p>Soon to be added</p>
                 </details>
         </details>
     </nav>
@@ -47,9 +46,7 @@
                     I am happy I learned the basics of HTML.
                 </p>
                 <h3>Meme of the day</h3>
-                <img src="img/meme.png" alt="Meme about br" style="width:300px;height:400px;">
-                 
-                    
+                <img src="img/meme.png" alt="Meme about br" width="300" height="400">   
             </section>
         <hr>         
         <h2>4/6/2021 Entry</h2>
@@ -67,6 +64,7 @@
                 <h3>Song of the day</h3>
                 <audio controls>
                     <source src="music/jazz.mp3" type="audio/mp3">
+                    Your browser doesn't support the audio element.
                 </audio>
             </section>
         <hr>
@@ -84,8 +82,10 @@
                     <div>I also started working out.</div>
                 
                 <h3>Video of the day</h3>
-                <iframe width="420" height="345" src="https://www.youtube.com/watch?v=31HfP81oWDI">
-                </iframe>
+                <video controls>
+                    <source src="video/video.mp4" type="video/mp4">
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
             </section>
         <hr>
         <h2>Create your own entry</h2>
@@ -141,9 +141,9 @@
 
                 <p></p>
                 <p>Confirmation</p>
-                <input type="checkbox" id="email" name="email" value="by_email">
+                <input type="checkbox" id="email" name="email">
                 <label for="email"> Send by email</label><br>
-                <input type="checkbox" id="phone" name="phone" value="by_phone">
+                <input type="checkbox" id="phone" name="phone">
                 <label for="phone"> Send by phone</label><br>
                 
                 <p></p>
