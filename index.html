@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>Jun's Journal</title>
+</head>
+<body>
+    <header>
+        <h1>Jun's Journal</h1>
+
+    </header>
+    <nav>
+        <p>Resources used</p>
+        <a href="https://www.freecodecamp.org/news/html-basics-for-beginners/">HTML Basics</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>
+        <a href="https://html.spec.whatwg.org/">Official HTML Specification</a>
+        <details>
+            <summary>Sort by month and year</summary>
+                <details>
+                    <summary>2021</summary>
+                        <p>Soon to be worked on</p>
+                </details>
+        </details>
+    </nav>
+    <hr>
+    <main>
+        <h2>4/7/2021 Entry</h2>
+            <section>
+                <h3>To-Do list (From most important to least)</h3>
+                <ol>
+                    <li><strong>Finish this lab</strong></li>
+                    <li>Greet the Professor</li>
+                    <li>Watch lecture recordings</li>
+                    <li>Leetcode</li>
+                </ol>
+
+                <h3>Highlights of the day</h3>                
+                <ul>
+                    <li>Changed the water for my Goldfish(also known as <i>Carassius auratus)</i></li>
+                </ul>
+                <h3>Summary of day</h3>
+                <p>Today was a somewhat productive day. I ended up waking 
+                    up late for my lectures because my sleep schdule is messed up.
+                    However, I learned a great deal about HTML through the lab I 
+                    am working on. Although I did not finish everything I wanted,
+                    I am happy I learned the basics of HTML.
+                </p>
+                <h3>Meme of the day</h3>
+                <img src="img/meme.png" alt="Meme about br" style="width:300px;height:400px;">
+                 
+                    
+            </section>
+        <hr>         
+        <h2>4/6/2021 Entry</h2>
+            <section>
+                <h3>Highlights of the day</h3>
+                    <ul>
+                        <li>Had some delcious food for dinner</li>
+                    </ul>
+                
+                <h3>Summary of day</h3>
+                <p>Today was <em>not</em> a productive day at all. I had brain fog
+                    the entire day, and could not get any work done. Additionally, my
+                    mood was not happy at all.
+                </p>
+                <h3>Song of the day</h3>
+                <audio controls>
+                    <source src="music/Weather Report - Birdland.mp3" type="audio/mp3">
+                </audio>
+            </section>
+        <hr>
+        <h2>4/5/2021 Entry</h2>
+            <section>
+                <h3>Downs of the day</h3>
+                    <ul>
+                        <li><b>Accidently forgot to end my Amazon membership</b></li>
+                    </ul>
+                <h3>Summary of day</h3>
+                <p>
+                    <span>
+                        Today was a good day. I managed to finish all my work prior
+                        to this day. 
+                    </span>
+                    <div>I also started working out.</div>
+                </p>
+                <h3>Video of the day</h3>
+                <iframe width="420" height="345" src="https://www.youtube.com/watch?v=31HfP81oWDI">
+                </iframe>
+            </section>
+        <hr>
+        <h2>Create your own entry</h2>
+        <form>
+            <fieldset>
+                <p><label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first_name"></p>
+                
+                <p><label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name"></p>
+
+                <p><label for="date">Date</label>
+                <input type="date" id="date" name="date"></p>
+
+                <p>Date of the week </p>
+                    <input type="radio" id="monday" name="week" value="monday">
+                    <label for="monday">Monday</label><br>
+                    <input type="radio" id="tuesday" name="week" value="tuesday">
+                    <label for="tuesday">Tuesday</label><br>
+                    <input type="radio" id="wednesday" name="week" value="wednesday">
+                    <label for="wednesday">Wednesday</label><br>
+                    <input type="radio" id="thursday" name="week" value="thursday">
+                    <label for="wednesday">Thursday</label><br>
+                    <input type="radio" id="friday" name="week" value="friday">
+                    <label for="wednesday">Friday</label><br>
+                    <input type="radio" id="saturday" name="week" value="saturday">
+                    <label for="wednesday">Saturday</label><br>
+                    <input type="radio" id="sunday" name="week" value="sunday">
+                    <label for="wednesday">Sunday</label>
+                <p></p>
+
+                <label for="Highlights">Highlights/To-do list</label>
+                <br>
+                <textarea id="Highlights" name="Highlights" rows="10" cols="80"></textarea>
+                <p></p>
+
+                <p><label for="mood">Choose a mood:</label>
+                <input list="moods" id="mood" name="mood"/></p>
+
+                <datalist id="moods">
+                    <option value="Happy">
+                    <option value="Not Happy">
+                </datalist>
+
+                <p></p>
+
+                <label for="media">Choose a media to upload:</label>
+                <select name="media" id="media">
+                    <option value="image">Image</option>
+                    <option value="audio">Audio</option>
+                    <option value="video">Video</option>
+                </select>
+
+                <p></p>
+                <p>Confirmation</p>
+                <input type="checkbox" id="email" name="email" value="by_email">
+                <label for="email"> Send by email</label><br>
+                <input type="checkbox" id="phone" name="phone" value="by_phone">
+                <label for="vphone"> Send by phone</label><br>
+                
+                <br>
+                <button type="button">Submit!</button>
+            </fieldset>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p>Author: Young Jun Kim<br>
+        Contact information</p>
+        <ul>
+            <li><a href="https://github.com/Youngjun333">Github page</a></li>
+            <li>Phone number: 333-333-3333</li>
+            <li>Email: random@random.com</li>
+        </ul>
+    </footer>
+</body>
+</html>
