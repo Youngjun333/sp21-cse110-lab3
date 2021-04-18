@@ -1,12 +1,15 @@
+/*default color for text*/
 h1, h2, h3, p, form, nav, ol, ul, hr, div, span{
     color:  yellow;
 }
 
+/*headings*/
 h1, h2 {
     text-align: center;
     background-color: purple;   
 }
 
+/*format for the menu*/
 .menu {
     background-color: black;
     width: 20em;
@@ -15,14 +18,17 @@ h1, h2 {
     border-width: 5px;
     border-style: dashed;
     margin: 20px;
+    display: block;
 }
 
+/*first entry*/
 .first {
     border-style: solid;
     border-color: yellow;
     border-width: 4pt;
     border-radius: 1pc;
     background-color: red;
+    position: relative;
 
     padding-right: 10px;
     padding-left: 10px;
@@ -31,38 +37,116 @@ h1, h2 {
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 30px;
+
 }
 
 
+.pic {
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+}
+
+/*headings for each sub entry*/
 h3 {
     background-color: purple;
     margin: auto;
 }
 
+/*title*/
 h1 {
     text-decoration: underline;
     text-decoration-thickness: 5px;
-    
+    position: static;
 }
 
+/*background color*/
 body {
     background-color: rgb(0,0,255);
 }
 
+/*highlights what is important*/
 #urgent {
     color: #00FF00
 }
 
+/*highlights links*/
 a:hover {
     color: green;
 }
 
+/*changes color of goldfish text*/
 i:active {
     color: black;
 }
 
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.container div {
+    /*border:1px #ccc solid;*/
+    background-color: hsl(0, 100%, 50%);
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    padding: 15px 15px 15px 15px;
+}
+
+.item-1 {
+    flex: 2;
+}
+
+.item-2 {
+    flex: 2;
+}
+
+.item-3 {
+    flex: 1;
+}
+
+a[href="https://github.com/Youngjun333"] {
+    color: red;
+}
+
+/*change text color depending on pixels*/
 @media (max-width: 500px) {
     h1, h2, h3, p, form, nav, ol, ul, hr, div, span{
         color: white;
     }
+
+    * {
+        background-color: black;
+    }
+
+    .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .container div {
+        /*border:1px #ccc solid;*/
+        background-color: hsl(0, 100%, 50%);
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+        padding: 15px 15px 15px 15px;
+    }
+    
+    .item-1 {
+        flex: 2;
+    }
+    
+    .item-2 {
+        flex: 2;
+    }
+    
+    .item-3 {
+        flex: 1;
+    }
+    
 }
