@@ -2,14 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="mystyle.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
     <title>Jun's Journal</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Original+Surfer&family=Zen+Dots&display=swap" rel="stylesheet"> 
+    <style>
+    h1 {
+        font-family: 'Indie Flower', cursive;
+    }
+
+    h2 {
+        font-family: 'Original Surfer', cursive;
+    }
+
+    h3 {
+        font-family: 'Zen Dots', cursive;
+    }
+    </style>
 </head>
 <body>
     <header>
         <h1>Jun's Journal</h1>
     </header>
-    <nav>
+    <div class="menu"><nav>
         <p>Resources used</p>
         <a href="https://www.freecodecamp.org/news/html-basics-for-beginners/">HTML Basics</a>
         <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>
@@ -21,14 +37,14 @@
                     <p>Soon to be added</p>
                 </details>
         </details>
-    </nav>
+    </nav></div>
     <hr>
     <main>
         <h2>4/7/2021 Entry</h2>
-            <section>
+            <div class="first"><section>
                 <h3>To-Do list (From most important to least)</h3>
                 <ol>
-                    <li><strong>Finish this lab</strong></li>
+                    <li id="urgent"><strong>Finish this lab</strong></li>
                     <li>Greet the Professor</li>
                     <li>Watch lecture recordings</li>
                     <li>Leetcode</li>
@@ -46,8 +62,8 @@
                     I am happy I learned the basics of HTML.
                 </p>
                 <h3>Meme of the day</h3>
-                <img src="img/meme.png" alt="Meme about br" width="300" height="400">   
-            </section>
+                <img src="img/meme.png" alt="Meme about br" width="300" height="400">
+            </section></div>
         <hr>         
         <h2>4/6/2021 Entry</h2>
             <section>
@@ -152,7 +168,7 @@
         </form>
     </main>
     <hr>
-    <footer>
+    <footer class="important">
         <p>Author: Young Jun Kim<br>
         Contact information</p>
         <ul>
