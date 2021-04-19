@@ -14,10 +14,10 @@ h1, h2 {
     background-color: black;
     width: 20em;
     height: 15ex;
-    padding: 3vw;
+    padding: 3vw 10vs 3vs 10vs;
     border-width: 5px;
     border-style: dashed;
-    margin: 20px;
+    margin: 20px 20px 20px 20px;
     display: block;
 }
 
@@ -37,10 +37,10 @@ h1, h2 {
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 30px;
-
+    margin-top: 30px;
 }
 
-
+/*change pic size*/
 .pic {
     display: inline-block;
     height: 300px;
@@ -80,6 +80,7 @@ i:active {
     color: black;
 }
 
+/*flex box*/
 .container {
     display: flex;
     align-items: flex-start;
@@ -107,8 +108,56 @@ i:active {
     flex: 1;
 }
 
+/*grid*/
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.box-1 {
+    align-self: end;
+}
+
+.box-2 {
+    align-self: center;
+}
+
+.box-3 {
+    align-self: start;
+}
+
+/*change github link*/
 a[href="https://github.com/Youngjun333"] {
     color: red;
+}
+
+/*change color of p's of div*/
+div p {
+    background-color: black;
+}
+
+/*change font of fieldset children*/
+fieldset > p {
+    font-family: cursive;
+}
+
+/*change background right after p when it's ul*/
+p + ul{
+    background-color: black;
+    border-style: dotted;
+    border-radius: 3px;
+}
+
+/*change color of all labels that are general siblings*/
+p ~ label {
+    background-color: red;
+}
+
+/*change color of all p's that are from the my_name class*/
+p.my_name {
+    background-color: purple;
+    border-style: solid;
 }
 
 /*change text color depending on pixels*/
@@ -135,7 +184,7 @@ a[href="https://github.com/Youngjun333"] {
         border-color: black;
         border-width: 2px;
         padding: 15px 15px 15px 15px;
-    }
+    }p
     
     .item-1 {
         flex: 2;
